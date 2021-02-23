@@ -5,7 +5,7 @@ import Main from './components/main';
 import { Link } from 'react-router-dom';
 
 class App extends Component {
-  return () {
+  render () {
     return (
       <div className="big-content">
         <Layout>
