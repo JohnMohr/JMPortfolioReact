@@ -7,6 +7,7 @@ class Landing extends Component {
             <div style={{ width: '100%', margin: 'auto' }}>
                 <Grid className="landing-grid">
                     <Cell col={12}>
+                        
                         <img
                             src="https://avatars2.githubusercontent.com/u/74803311?v=4"
                             alt="avatar"
@@ -19,16 +20,16 @@ class Landing extends Component {
                             <p>HTML/CSS | Bootstrap | Javascript | Handlebars | React | NodeJS | Sequelize | Express | MongoDB</p>
 
                             <div className="social-links">
-                                <a href="#">
+                                <a href="https://www.linkedin.com/in/john-mohr-42629aa4/">
                                     <i className="fa fa-linkedin-square" aria-hidden="true" />
                                 </a>
-                                <a href="#">
+                                <a href="https://github.com/JohnMohr">
                                     <i className="fa fa-github-square" aria-hidden="true" />
                                 </a>
-                                <a href="#">
+                                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
                                     <i className="fa fa-free-code-camp" aria-hidden="true" />
                                 </a>
-                                <a href="#">
+                                <a href="https://www.youtube.com/watch?v=ZmSORFI2XzU">
                                     <i className="fa fa-youtube-square" aria-hidden="true" />
                                 </a>
 

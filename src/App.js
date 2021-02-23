@@ -1,41 +1,77 @@
 import React, { Component } from 'react';
 import './App.css';
 import { Layout, Header, Navigation, Drawer, Content } from 'react-mdl';
-import Main from './Component/Main';
-import { Link } from 'react-router-dom';
+import { BrowserRouter as Router, Link, Route, Switch } from 'react-router-dom';
+import Landing from './Component/Landing';
+import About from './Component/About';
+import Contact from './Component/Contact';
+import Projects from './Component/Projects';
+import Resume from './Component/Resume';
+import Main from './Component/Main'
+import styled from 'styled-components';
+
+const Button = styled.button``;
+
+function clickMe() {
+  console.log('clicked');
+}
 
 class App extends Component {
-  render () {
+  render() {
     return (
       <div className="big-content">
         <Layout>
-          <Header className="header-color" title={<Link style={{textDecoration: 'none', color: 'white'}} to="/">MohrPortfolio</Link>}>
+          <Header className="header-color">
             <Navigation>
-              <Link to="/aboutme">About Me</Link>
-              <Link to="/resume">Resume</Link>
-              <Link to="/projects">Projects</Link>
-              <Link to="/contact">Contact</Link>
+              <a href="/">
+              <button onClick={clickMe}>About Me</button>
+              </a>
+              <a href="/contact">
+              <button onClick={clickMe}>Contact</button>
+              </a>
+              <a href="/projects">
+              <button onClick={clickMe}>Projects</button>
+              </a>
+              <a href="/resume">
+              <button onClick={clickMe}>Resume</button>
+              </a>
             </Navigation>
           </Header>
-          <Drawer title={<Link style={{textDecoration: 'none', color: 'black'}} to="/">MohrPortfolio</Link>}>
-          <Navigation>
-              <Link to="/aboutme">About Me</Link>
-              <Link to="/resume">Resume</Link>
-              <Link to="/projects">Projects</Link>
-              <Link to="/contact">Contact</Link>
+          <Drawer>
+            <Navigation>
+            <a href="/">
+              <button onClick={clickMe}>About Me</button>
+              </a>
+              <a href="/contact">
+              <button onClick={clickMe}>Contact</button>
+              </a>
+              <a href="/projects">
+              <button onClick={clickMe}>Projects</button>
+              </a>
+              <a href="/resume">
+              <button onClick={clickMe}>Resume</button>
+              </a>
             </Navigation>
           </Drawer>
           <Content>
             <div className="page-content" />
-            <Main/>
+            <Router>
+              <Main />
+
+            </Router>
+
+
           </Content>
+          
+
         </Layout>
       </div>
+
 
 
     );
   }
 }
-    
+
 
 export default App;
