@@ -7,7 +7,7 @@
 
 ***
 
-<iframe src="https://drive.google.com/file/d/1oLlptw9IfzKcChx3VUbd1S3GviREj1RM/preview" width="640" height="480"></iframe>
+![alt-text]("public\assets\JMReactHomework.gif")
 
 ## **Description**
 
@@ -28,7 +28,7 @@ This project was about updating my profile from html/css and bootstrap into a mo
 ## **Installation**
 
 *Required Steps of Installation:*
-The application is not designed to be installed, but rather be viewed. But I suppose the steps would be to npm i to install the required dependencies and npm start to launch the react application into your localhost.
+The application is not designed to be installed, but rather be viewed. But I suppose the steps would be, in your bash terminal type "npm i" to install the required dependencies. After which type "npm start" to launch the react application into your localhost.
 
 
 
