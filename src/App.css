@@ -16,6 +16,13 @@
   height: 100%;
 }
 
+#layout {
+  background: #833ab4;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
 button {
   background-color: darkslategray;
   color: aqua;
@@ -29,7 +36,13 @@ button {
   
 }
 button:hover {
-  background-color: darkolivegreen
+  background-color: white;
+}
+
+.main-grid {
+  background: #833ab4;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .projects-grid {
@@ -46,6 +59,10 @@ button:hover {
 /* contact page css */
 
 .contact-body {
+  color: whitesmoke;
+  background: #833ab4;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   margin: auto;
   position: fixed;
   width: 100%;
@@ -59,30 +76,38 @@ button:hover {
   justify-content: center;
   width: 80%;
   height: 550px;
-  background: white;
-  color: black;
+  background: #27221F;  /* fallback for old browsers */
+  color:white;
   margin-bottom: 20px;
 }
 
 .contact-grid h2 {
+  color: aqua;
   font-family: 'Anton', sans-serif;
 }
 
 .contact-grid p {
+  color:whitesmoke;
   font-family: 'Oxygen', sans-serif;
   font-weight: bold;
 }
 
 .contact-grid hr {
-  border-top: 5px dotted black;
+  border-top: 5px dotted whitesmoke;
   width: 50%;
   margin: auto;
 }
 
 .contact-list i {
-  font-size: 66px;
+  color: aqua;
+  font-size: 47px;
   padding-right: 5rem;
 }
+
+.sidenav {
+  background-color: #27221F
+}
+
 
 
 /* contact page css */
@@ -102,6 +127,12 @@ button:hover {
 
 .banner-text h1 {
   font-size: 66px;
+  font-weight: bold;
+  color: white;
+}
+.banner-text h2 {
+  padding-top: 5px;
+  font-size: 44px;
   font-weight: bold;
   color: white;
 }

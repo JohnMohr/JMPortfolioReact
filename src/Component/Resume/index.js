@@ -8,8 +8,7 @@ import Skills from '../Skills';
 class Resume extends Component {
   render() {
     return(
-      <div>
-        <Grid>
+        <Grid className="main-grid">
           <Cell col={4}>
             <div style={{textAlign: 'center'}}>
               <img
@@ -84,13 +83,13 @@ class Resume extends Component {
                     />
                     <Skills
                       skill="React"
-                      progress={65}
+                      progress={75}
                       />
 
 
           </Cell>
         </Grid>
-      </div>
+      
     )
   }
 }

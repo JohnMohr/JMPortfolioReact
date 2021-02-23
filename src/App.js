@@ -20,49 +20,61 @@ class App extends Component {
   render() {
     return (
       <div className="big-content">
-        <Layout>
+        <Layout id="layout">
           <Header className="header-color">
-            <Navigation>
+            <Navigation className="navigation">
               <a href="/">
-              <button onClick={clickMe}>About Me</button>
+                <button onClick={clickMe}>Home</button>
+              </a>
+              <a href="/aboutme">
+                <button onClick={clickMe}>About Me</button>
               </a>
               <a href="/contact">
-              <button onClick={clickMe}>Contact</button>
+                <button onClick={clickMe}>Contact</button>
               </a>
               <a href="/projects">
-              <button onClick={clickMe}>Projects</button>
+                <button onClick={clickMe}>Projects</button>
               </a>
               <a href="/resume">
-              <button onClick={clickMe}>Resume</button>
+                <button onClick={clickMe}>Resume</button>
               </a>
+              <a href="https://docs.google.com/document/d/13XTHa6004-Zgm-seQ-SCTWuZibD4xC8kHrIyO86-0b4/edit?usp=sharing">
+                <button>Chef Resume</button>
+            </a>
             </Navigation>
           </Header>
           <Drawer>
-            <Navigation>
-            <a href="/">
-              <button onClick={clickMe}>About Me</button>
+            <Navigation className="sidenav">
+              <a href="/">
+                <button onClick={clickMe}>About Me</button>
               </a>
               <a href="/contact">
-              <button onClick={clickMe}>Contact</button>
+                <button onClick={clickMe}>Contact</button>
               </a>
               <a href="/projects">
-              <button onClick={clickMe}>Projects</button>
+                <button onClick={clickMe}>Projects</button>
               </a>
               <a href="/resume">
-              <button onClick={clickMe}>Resume</button>
+                <button onClick={clickMe}>Resume</button>
               </a>
             </Navigation>
           </Drawer>
           <Content>
             <div className="page-content" />
             <Router>
-              <Main />
+              <Switch>
+                <Route exact path="/" component={Landing} />
+                <Route path="/aboutme" component={About} />
+                <Route path="/contact" component={Contact} />
+                <Route path="/projects" component={Projects} />
+                <Route path="/resume" component={Resume} />
+              </Switch>
 
             </Router>
 
 
           </Content>
-          
+
 
         </Layout>
       </div>

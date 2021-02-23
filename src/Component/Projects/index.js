@@ -15,9 +15,9 @@ class Projects extends Component {
         <div className="projects-grid">
           {/* Project 1 */}
           <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
-            <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://upload.wikimedia.org/wikipedia/en/thumb/4/47/The_Brak_Show_characters.jpg/300px-The_Brak_Show_characters.jpg) center / cover'}} >React Project #1</CardTitle>
+            <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://upload.wikimedia.org/wikipedia/en/thumb/4/47/The_Brak_Show_characters.jpg/300px-The_Brak_Show_characters.jpg) center / cover'}} > ZestyMeals</CardTitle>
             <CardText>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+            ZestyMeals Food/Alcohol app designed to expand your dining experience.
             </CardText>
             <CardActions border>
               <Button colored>GitHub</Button>
@@ -31,9 +31,9 @@ class Projects extends Component {
 
           {/* Project 2 */}
           <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
-            <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://upload.wikimedia.org/wikipedia/en/thumb/4/47/The_Brak_Show_characters.jpg/300px-The_Brak_Show_characters.jpg) center / cover'}} >React Project #2</CardTitle>
+            <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://upload.wikimedia.org/wikipedia/en/thumb/4/47/The_Brak_Show_characters.jpg/300px-The_Brak_Show_characters.jpg) center / cover'}} >ShiftyPiXels</CardTitle>
             <CardText>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+            ShifyPiXels: Blow off some steam photoshopping your stresses away.
             </CardText>
             <CardActions border>
               <Button colored>GitHub</Button>
@@ -47,9 +47,9 @@ class Projects extends Component {
 
           {/* Project 3 */}
           <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
-            <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://upload.wikimedia.org/wikipedia/en/thumb/4/47/The_Brak_Show_characters.jpg/300px-The_Brak_Show_characters.jpg) center / cover'}} >React Project #3</CardTitle>
+            <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://upload.wikimedia.org/wikipedia/en/thumb/4/47/The_Brak_Show_characters.jpg/300px-The_Brak_Show_characters.jpg) center / cover'}} >Autoflower</CardTitle>
             <CardText>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+              Autoflower: a dispensary POS designed with, and for, Cannabis dispensaries.
             </CardText>
             <CardActions border>
               <Button colored>GitHub</Button>
@@ -66,15 +66,47 @@ class Projects extends Component {
       )
     } else if(this.state.activeTab === 1) {
       return (
-        <div><h1>This is Angular</h1></div>
+        <div className="homework-grid">
+          <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
+            <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://upload.wikimedia.org/wikipedia/en/thumb/4/47/The_Brak_Show_characters.jpg/300px-The_Brak_Show_characters.jpg) center / cover'}} > Squat Goals</CardTitle>
+            <CardText>
+            SquatGoals: Get your Squat on with this fitness tracker!
+            </CardText>
+            <CardActions border>
+              <Button colored>GitHub</Button>
+              <Button colored>CodePen</Button>
+              <Button colored>Live Demo</Button>
+            </CardActions>
+            <CardMenu style={{color: '#fff'}}>
+              <IconButton name="share" />
+            </CardMenu>
+          </Card>
+
+          {/* Project 2 */}
+          <Card shadow={5} style={{minWidth: '450', margin: 'auto'}}>
+            <CardTitle style={{color: '#fff', height: '176px', background: 'url(https://upload.wikimedia.org/wikipedia/en/thumb/4/47/The_Brak_Show_characters.jpg/300px-The_Brak_Show_characters.jpg) center / cover'}} >ReadME Generator</CardTitle>
+            <CardText>
+            ReadME Gen: https://github.com/JohnMohr/RMGen
+            </CardText>
+            <CardActions border>
+              <Button colored>GitHub</Button>
+              <Button colored>CodePen</Button>
+              <Button colored>Live Demo</Button>
+            </CardActions>
+            <CardMenu style={{color: '#fff'}}>
+              <IconButton name="share" />
+            </CardMenu>
+          </Card>
+
+        </div>
       )
     } else if(this.state.activeTab === 2) {
       return (
-        <div><h1>This is VueJS</h1></div>
+        <div><h1>More to Come</h1></div>
       )
     } else if(this.state.activeTab === 3) {
       return (
-        <div><h1>This is MongoDB</h1></div>
+        <div><h1>More to Come</h1></div>
       )
     }
 
@@ -86,10 +118,10 @@ class Projects extends Component {
     return(
       <div>
         <Tabs activeTab={this.state.activeTab} onChange={(tabId) => this.setState({ activeTab: tabId })} ripple>
-          <Tab>React</Tab>
-          <Tab>Angular</Tab>
-          <Tab>VueJS</Tab>
-          <Tab>MongoDB</Tab>
+          <Tab>Projects</Tab>
+          <Tab>Homework</Tab>
+          <Tab>For Funsies</Tab>
+          <Tab>Extra</Tab>
         </Tabs>
 
 
