@@ -7,7 +7,7 @@
 
 ***
 
-![alt-text]("./JMReactHomework.gif")
+![alt text](https://github.com/JohnMohr/JMPortfolioReact/blob/main/JMReactHomework.gif?raw=true)
 
 ## **Description**
 
