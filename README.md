@@ -7,7 +7,7 @@
 
 ***
 
-![alt-text]("public\assets\JMReactHomework.gif")
+![alt-text]("/public/assets/JMReactHomework.gif")
 
 ## **Description**
 
